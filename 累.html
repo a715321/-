@@ -4,6 +4,11 @@
 	<style>
 #header {height:150px;padding:1em}
 </style>
+<style>
+.圖片{
+width:35%
+}
+</style>
 	<style>
 .center {
 margin-left: auto;
@@ -11,6 +16,27 @@ margin-right: auto;
 width: 70%;
 background-color: #b0e0e6;
 }
+<style>
+.dropdown {position: relative; display: inline-block;}
+.dropbtn {background-color: #3498DB; color: white; padding: 16px; font-size: 16px; border: none;}
+.dropdown-content {display: none; position: absolute; background-color: #f1f1f1; min-width: 160px; z-index: 1;}
+.dropdown-content a {color: black; padding: 12px 16px; text-decoration: none; display: block;}
+.show {display: block;}
+</style>
+<body>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+<div id="myDropdown" class="dropdown-content">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+</div>
+</div>
+<script>
+.onclick=function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+</script>
+</body>
 <style>
 {background-image:url("鵝鑾鼻.jpg");
 background-repeat:no-repeat;
@@ -43,8 +69,12 @@ background-size: cover;}
 <center>
 	<div class="header">
 <pre title="超爆累^^" style="font-family:verdana;color:red;font-size:300%;text-align:center">墾丁一日</pre></div>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">行程規劃</button>
+<div class="圖片">
+<img src="我想用地圖.jpg" id="demo" style="display:none;">
+</div>
 
-<a href="https://www.google.com/maps/d/u/1/edit?mid=1zsNdVRv8E1CRGXT1QRUi9swxqxZgVX04&ll=22.29914232507285%2C120.57775830000003&z=10">行程</a>
+
 <body>
 <p title="風好大"class="大標題">1.9:00出發-->10:50到福安宮</p>
 <img src="福安宮.jpg" width="100">
@@ -52,10 +82,30 @@ background-size: cover;}
 <!DOCTYPE html>
 <html>
 <body>
-<p id="demo" style="display:none;">車城福安宮位於台灣最南端屏東縣車城鄉，號稱全台灣以及東南亞最大的土地公廟。車城福安宮據說有顯赫的神威，庇祐鄉里達300年，是恆春當地的信仰中心，正殿安立的土地公像全身掛滿金牌，據說是在清朝曾受乾隆皇帝褒封並賜王冠、龍袍一襲，顯得神威十足是全省最為威風的的土地公。</p>
-
-<button type="button" onclick="document.getElementById('demo').style.display='block'">Click
-Me!</button>
+	<!DOCTYPE html>
+<html>
+<body>
+<p id="content">基本介紹</p>
+<button type="button" onclick="content1()">點我看簡介</button>
+<button type="button" onclick="content2()">點我看資料</button>
+<script>
+function content1(){
+document.getElementById("content").innerHTML=content;
+}
+function content2(){
+document.getElementById("content").innerHTML=content;
+}
+</script>
+</body>
+</html>
+<script>
+function content1(){
+document.getElementById("content").innerHTML="車城福安宮位於台灣最南端屏東縣車城鄉，號稱全台灣以及東南亞最大的土地公廟。車城福安宮據說有顯赫的神威，庇祐鄉里達300年，是恆春當地的信仰中心，正殿安立的土地公像全身掛滿金牌，據說是在清朝曾受乾隆皇帝褒封並賜王冠、龍袍一襲，顯得神威十足是全省最為威風的的土地公。";
+}
+function content2(){
+document.getElementById("content").innerHTML="屏東縣車城鄉福安路51號<br/>營業時間:一到日早上五點至晚上九點";
+}
+</script>
 
 </body>
 </html>
