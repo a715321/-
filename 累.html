@@ -16,26 +16,8 @@ margin-right: auto;
 width: 70%;
 background-color: #b0e0e6;
 }
-<style>
-.dropdown {position: relative; display: inline-block;}
-.dropbtn {background-color: #3498DB; color: white; padding: 16px; font-size: 16px; border: none;}
-.dropdown-content {display: none; position: absolute; background-color: #f1f1f1; min-width: 160px; z-index: 1;}
-.dropdown-content a {color: black; padding: 12px 16px; text-decoration: none; display: block;}
-.show {display: block;}
-</style>
 <body>
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Dropdown</button>
-<div id="myDropdown" class="dropdown-content">
-<a href="#home">Home</a>
-<a href="#about">About</a>
 </div>
-</div>
-<script>
-.onclick=function myFunction() {
-document.getElementById("myDropdown").classList.toggle("show");
-}
-</script>
 </body>
 <style>
 {background-image:url("鵝鑾鼻.jpg");
@@ -55,7 +37,7 @@ height:auto;
 </style>
 <style>
 .大標題
-{text-align:center;color:black;font-size:200%;color:red;font-family:DFKai-sb}
+{text-align:center;font-size:300%;color:yellow;font-family:DFKai-sb}
 </style>
 <link rel="stylesheet" type="text/css" href="123.css">
 <meta charset="utf-8">
@@ -68,8 +50,8 @@ background-size: cover;}
 <meta charset="utf-8">
 <center>
 	<div class="header">
-<pre title="超爆累^^" style="font-family:verdana;color:red;font-size:300%;text-align:center">墾丁一日</pre></div>
-<button type="button" onclick="document.getElementById('demo').style.display='block'">行程規劃</button>
+<pre title="超爆累^^" style="font-family:verdana;color:red;font-size:600%;text-align:center">墾丁一日</pre></div>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">小小地圖</button>
 <div class="圖片">
 <img src="我想用地圖.jpg" id="demo" style="display:none;">
 </div>
@@ -79,9 +61,6 @@ background-size: cover;}
 <p title="風好大"class="大標題">1.9:00出發-->10:50到福安宮</p>
 <img src="福安宮.jpg" width="100">
 <div class="center">
-<!DOCTYPE html>
-<html>
-<body>
 	<!DOCTYPE html>
 <html>
 <body>
@@ -103,11 +82,65 @@ function content1(){
 document.getElementById("content").innerHTML="車城福安宮位於台灣最南端屏東縣車城鄉，號稱全台灣以及東南亞最大的土地公廟。車城福安宮據說有顯赫的神威，庇祐鄉里達300年，是恆春當地的信仰中心，正殿安立的土地公像全身掛滿金牌，據說是在清朝曾受乾隆皇帝褒封並賜王冠、龍袍一襲，顯得神威十足是全省最為威風的的土地公。";
 }
 function content2(){
-document.getElementById("content").innerHTML="屏東縣車城鄉福安路51號<br/>營業時間:一到日早上五點至晚上九點";
-}
+document.getElementById("content").innerHTML="屏東縣車城鄉福安路51號<br/>營業時間:一到日早上五點至晚上九點";}
 </script>
-
 </body>
 </html>
+</div>
+<br>
+<body>
+<p title="風好大"class="大標題">2.11:20出發-->11:30到鹿境</p>
+<img src="路境.jpg" width="100">
+	<div class="center">
+<!DOCTYPE html>
+<html>
+<body>
+<p id="content1">基本介紹</p>
+<button type="button" onclick="content13()">點我看簡介</button>
+<button type="button" onclick="content14()">點我看資料</button>
+<script>
+function content13(){
+document.getElementById("content1").innerHTML="陽光 藍海 梅花鹿 和人脫離塵囂，回歸生活中最自然的互動，這裡是南國，我們在墾丁純粹的自然 原味的旅行曬曬溫暖的陽光，跳入無際的藍海，直接擁抱最親人的梅花鹿緩慢的腳步， 漫步在充滿悠閒的熱鬧街道一個簡單的小假期就這樣展開";}
+function content14(){
+document.getElementById("content1").innerHTML="屏東縣恆春鎮恆公路1097之1號<br/>營業時間:一到日早上九點至晚上6點<br/>門票價格:成人兩百，其餘優惠五十元，五歲以下免費";
+}</script>
+</div>
+</br>
+<p title="風好大"class="大標題">3.12:30出發-->吃午餐-->15:15到台灣最南端</p>
+<img src="南端.jpg" width="100">
+<div class="center">
+	<!DOCTYPE html>
+<html>
+<body>
+<p id="content2">基本介紹</p>
+<button type="button" onclick="content23()">點我看簡介</button>
+<button type="button" onclick="content24()">點我看資料</button>
+<script>
+function content23(){
+document.getElementById("content2").innerHTML="它就位在名聞遐邇的鵝鑾鼻公園附近。由鵝鑾鼻公園旁的公路右轉後（往龍坑生態保護區及最南點），可抵達燈塔旁的最南點停車場，依指示牌指引前行可見一條鋪設石塊的林蔭小徑，沿小徑步行約十餘分鐘，即可看見立於礁岩上的最南點意象標誌。最南點（東經120度50分0秒；北緯21度53分59秒）的位置介於鵝鑾鼻公園與龍坑生態護區之間，在這方寸之地本處設置了木造眺望平台與意象標誌，讓到此一遊的遊客可立足南疆、胸懷天下，並可觀察海濱特殊的植物群落。";}
+function content24(){
+document.getElementById("content2").innerHTML="946台灣屏東縣恆春鎮燈塔路51巷50號<br/>營業時間:一到日早上九點至下午三點<br/>門票價格:100";
+}</script>
+</div>
+</br>
+<p title="風好大"class="大標題">4.4:05出發-->5:00到小灣海灘</p>
+<img src="小灣.jpg" width="100">
+<div class="center">
+<!DOCTYPE html>
+<html>
+<body>
+<p id="content3">基本介紹</p>
+<button type="button" onclick="content33()">點我看簡介</button>
+<button type="button" onclick="content34()">點我看資料</button>
+<script>
+function content33(){
+document.getElementById("content3").innerHTML="小灣凱徹飯店與福華飯店前有一大片沙灘就是小灣，為一處貝殼沙灘盡頭就是青蛙石，目前委由墾丁凱徹飯店經營許多住宿的遊客喜歡到沙灘上戲水、游泳、國外遊客最喜歡做日光浴，兩側是珊瑚礁地形，海底景觀瑰麗，是一處潛水的好地點。";}
+function content34(){
+document.getElementById("content3").innerHTML="屏東縣恆春鎮小灣<br/>營業時間:一到日全天開放<br/>不用門票!!";
+}</script>
+</div>
+<p style="color:yellow">最後6:00出發-->9:00到家</p>
+<p style="color:yellow">總共224.3公里，總共花費12個小時</p>
+<p style="color:yellow">謝謝大家!!</p>
 </center>
 </body>
